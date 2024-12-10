@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,html {
+  width : 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
+/* Globa; */
+ul {
+  list-style: none;
+}
+
+/* Main join-Container */
+.join-container {
+  width: 40%;
+  height: 60%;
+  margin: 0 auto;
+  margin-top: 5%;
+  border-radius: 15px;
+  background-color: #373a40;
+}
+
+.join-container .heading {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 2rem;  
+  font-weight: bold;
+  color: white; 
+  background-color: #686d76;
+}
+
+.join-container .form input,  .join-container .form button, .join-container .form label {
+  display: block;
+  margin: 13px auto;
+  width: 80%;
+  padding: 5px 0;
+  font-size: 1.5rem;
+}
+
+.join-container .form label{
+  color: white;
+  text-align: center;
+}
+
+.join-container .form button {
+  background-color: coral;
+  color: white;
+}
+
+/* Chatbox container */
+
+.chatbox-container {
+  width: 80%;
+  height: 85%;
+  margin: 0 auto;
+  margin-top: 5%;
+  border-radius: 15px;
+  background-color: #373a40;
+}
+
+.chatbox-container header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: white; 
+  background-color: #686d76;
+  padding: 10px;
+}
+
+.chatbox-container header button {
+  background-color: coral;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.chatroom {
+  display: flex;
+  height: 90%;
+  width: 100%;
+}
+
+.chatdetails {
+  width: 20%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.chatpanel {
+  width: 80%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.chatpanel .chatroom {
+  background-color: white;
+}
+
+/* Message area */
+#message-form {
+  display: flex;
+}
+
+.message-form input {
+  width: 85%;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.message-form button {
+  color: white;
+  padding: 7px 30px;
+  background-color: coral;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* chatdetails */
+.chatroom .chatdetails{
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.chatroom .chatdetails .room{
+  margin: 20px auto;
+}
+
+.chatroom .chatdetails h2{
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.messages {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.message {
+  border: 1px solid grey;
+  margin: 10px;
+  padding: 5px; 
+  border-radius: 10px;
+  background-color: linen;
+  width: 90%;
+}
+
+.message .meta {
+  color: blue;
+}
+
+.message .meta span {
+  color: grey;  
+}

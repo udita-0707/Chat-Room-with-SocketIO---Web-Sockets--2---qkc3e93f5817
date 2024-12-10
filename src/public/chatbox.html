@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Chatbox</title>
+</head>
+
+<body>
+  <div class="chatbox-container">
+    <header>
+      <h1>Chatbox</h1>
+      <a href="./index.html"><button type="submit">Leave</button></a>
+    </header>
+    <section class="chatroom">
+      <!-- User Info -->
+      <div class="chatdetails">
+        <div class="users">
+          <h2>Users</h2>
+          <ul class="users-name"></ul>
+        </div>
+      </div>
+      <div class="chatpanel">
+        <!-- Messages -->
+        <div class="chatroom">
+          <div class="messages"></div>
+        </div>
+        <!-- Messsage Box -->
+        <form  class="message-form" id="message-form">
+          <input type="text" name="message" id="msg" placeholder="Message" autocomplete="off" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- querystring for parsing username coming from index.html -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+    integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+    crossorigin="anonymous"></script>
+  <!-- socket.io library -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- custom javascript -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
